@@ -48,6 +48,16 @@
             text-decoration: underline;
         }
 
+        #logo {
+             height: 40px;  
+             width: auto;   
+        }
+
+       
+nav a img {
+    pointer-events: none;  
+}
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -157,10 +167,10 @@ nav a {
     letter-spacing: 0.5px;
 }
 
-nav a:hover {
+/* nav a:hover {
     background-color: #9b9ea2;
     border-radius: 5px;
-}
+} */
 
 /* Header Section for the About Page */
 .header-section {
@@ -514,7 +524,7 @@ button:hover {
 
 .newsletter button {
     padding: 12px 30px;
-    background-color: #ff6f61;
+    background-color: #737475;
     color: white;
     border: none;
     border-radius: 5px;
@@ -524,7 +534,7 @@ button:hover {
 }
 
 .newsletter button:hover {
-    background-color: #d65f4d;
+    background-color: #737478;
 }
 
 .newsletter-image {
