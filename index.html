@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../js/script.js" defer></script>
+    <title>Home - Cape Town Blog</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/contact.html" id="newsletter-link">Newsletter</a> 
+    </nav>
+
+    <header class="parallax-header" loading="lazy">
+    </header>
+    
+      <main>
+
+        <div class="banner">
+            <h1>Cape Town - The Mother City</h1>
+            <p>Discover the beauty, culture, and history of Cape Town, one of the most iconic cities in the world.</p>
+        </div>
+        
+        <div class="details-section">
+            <h2>The History of Cape Town</h2>
+            <div class="content-container">
+                <p>Cape Town, known as the "Mother City," is South Africa's oldest city, founded in 1652. It is famous for its historical significance, beautiful landscapes, and diverse culture. The city has served as an important port for centuries, and its vibrant cultural scene attracts visitors from all over the world.</p>
+                <img src="https://raw.githubusercontent.com/Kifaa26/blog-images/refs/heads/main/jan-van-riebeeck.webp" alt="History of Cape Town" />
+            </div>
+        </div>
+
+        <div class="details-section">
+            <h2>Iconic Landmarks</h2>
+            <div class="content-container">
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/Kifaa26/blog-images/refs/heads/main/v-and-a-waterfront.webp" alt="V&A Waterfront" />
+                </div>
+                <div class="text-container">
+                    <p>Cape Town is home to some of the world's most iconic landmarks, such as the majestic Table Mountain, a natural wonder that offers breathtaking views of the city. Another must-see is Robben Island, where Nelson Mandela was imprisoned for many years. The Bo-Kaap neighborhood, with its colorful houses and rich cultural heritage, is another highlight of Cape Town's charm.</p>
+                    <div class="button">
+                        <button class="button-button" onclick="window.location.href='/details.html';">View Iconic Landmarks</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="details-section">
+            <h2>Culture and Cuisine</h2>
+            <div class="content-container">
+                <div class="text-container">
+                    <p>The culture of Cape Town is a melting pot of influences from its indigenous people, Dutch colonization, and a variety of international cultures. Cape Town is known for its delicious cuisine, blending African, European, and Asian flavors. Don't miss the opportunity to enjoy local dishes like bobotie, a savory meat dish with spices, or biltong, dried cured meat.</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/Gatsby-Steelies3-R.jpg?raw=true" alt="Cape Town Cuisine" />
+                </div>
+            </div>
+        </div>
+
+        <div class="details-section">
+            <h2>Things to Do in Cape Town</h2>
+            <ul>
+                <li>Take a cable car ride up Table Mountain for panoramic views of the city.</li>
+                <li>Visit the V&A Waterfront, home to shopping, dining, and entertainment.</li>
+                <li>Explore the beaches, including Camps Bay and Clifton, known for their white sands and clear waters.</li>
+                <li>Tour the Cape Winelands and taste some of the finest wines in the world.</li>
+                <li>Visit the famous Robben Island Museum and learn about South Africa's history.</li>
+            </ul>
+        </div>
+    </main>
+    
+      <footer>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+      </footer>
+    
+      <script>
+        // Example of interactivity using JavaScript
+        const posts = document.querySelectorAll('.blog-post');
+    
+        posts.forEach(post => {
+          post.addEventListener('click', () => {
+            alert(`You clicked on: ${post.querySelector('h2').textContent}`);
+          });
+        });
+      </script>
+</body>
+</html>

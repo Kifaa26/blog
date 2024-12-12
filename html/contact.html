@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="../js/script.js" defer></script>
+    <title>Contact - Cape Town Blog</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/contact.html" id="newsletter-link">Newsletter</a> 
+    </nav>
+
+    <main>
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Sign up for our Newsletter</h2>
+                    <p>Stay up to date with the latest news, tips, and exclusive offers directly from us! Join our community for exciting content and updates.</p>
+                    <p>By subscribing, you'll receive:</p>
+                    <ul>
+                        <li>Exclusive updates about Cape Town's best spots</li>
+                        <li>Insider tips on events, travel, and activities</li>
+                        <li>Special offers and promotions</li>
+                    </ul>
+                    <button id="subscribe-btn">Subscribe</button>
+                </div>
+                <div class="newsletter-image">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/south-africa-cape-town-city-hall.jpg?raw=true" alt="Cape Town City Hall">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Newsletter Sign-Up -->
+    <div id="newsletter-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Sign up for our Newsletter</h2>
+            <p>Stay up to date with the latest news, tips, and exclusive offers directly from us! Join our community for exciting content and updates.</p>
+            <form id="newsletter-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Subscription Confirmation -->
+    <div id="confirmation" class="confirmation-message">
+        <h2>Thank you for subscribing!</h2>
+        <p>You have been successfully subscribed to our newsletter. Expect exciting updates soon.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

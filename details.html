@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <title>Details - Cape Town Blog</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/contact.html" id="newsletter-link">Newsletter</a> 
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search attractions...">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+    </div>
+    
+    <main>
+
+        <h1 class="main-heading">Explore Cape Town's Top Attractions</h1>
+
+        <div class="grid-container">
+            <!-- Placeholder cards with added buttons -->
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/Kifaa26/blog-images/refs/heads/main/TM.webp" alt="Table Mountain" loading="lazy">
+                    <h2>Table Mountain</h2>
+                    <p>One of the New Seven Wonders of Nature, offering breathtaking views of the city and ocean.</p>
+                    <button onclick="window.open('https://www.tablemountain.net/', '_blank')">Learn More</button>
+                </div>
+        
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/Robben_Island_-_Cape_Town,_South_Africa_(3883849594).jpg?raw=true" alt="Robben Island" loading="lazy">
+                    <h2>Robben Island</h2>
+                    <p>A historic site where Nelson Mandela was imprisoned, now a UNESCO World Heritage Site.</p>
+                    <button onclick="window.open('https://www.robben-island.org.za/', '_blank')">Learn More</button>
+                </div>
+        
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/Kirstenbosch.jpg?raw=true" alt="Kirstenbosch Botanical Garden" loading="lazy">
+                    <h2>Kirstenbosch Botanical Garden</h2>
+                    <p>A stunning garden showcasing South Africa's diverse flora.</p>
+                    <button onclick="window.open('https://www.sanbi.org/gardens/kirstenbosch/', '_blank')">Learn More</button>
+                </div>
+        
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/VA-Waterfront.jpg?raw=true" alt="Victoria & Alfred Waterfront" loading="lazy">
+                    <h2>V&A Waterfront</h2>
+                    <p>A bustling hub of shops, restaurants, and entertainment with a backdrop of Table Mountain.</p>
+                    <button onclick="window.open('https://www.waterfront.co.za/', '_blank')">Learn More</button>
+                </div>
+        
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/Kifaa26/blog-images/refs/heads/main/cape-point-cape-of-good-hope.webp" alt="Cape Point" loading="lazy">
+                    <h2>Cape Point</h2>
+                    <p>A dramatic promontory offering panoramic ocean views and a sense of adventure.</p>
+                    <button onclick="window.open('https://capepoint.co.za/', '_blank')">Learn More</button>
+                </div>
+        
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/Boulders-Beach-photo-by-Chris-Patton-1.jpg?raw=true" alt="Boulders Beach" loading="lazy">
+                    <h2>Boulders Beach</h2>
+                    <p>Famous for its colony of African penguins and serene swimming areas.</p>
+                    <button onclick="window.open('https://www.sanparks.org/parks/table_mountain/tourism/attractions.php', '_blank')">Learn More</button>
+                </div>
+        
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/Bo-Kaap.jpg?raw=true" alt="Bo-Kaap" loading="lazy">
+                    <h2>Bo-Kaap</h2>
+                    <p> vibrant neighborhood known for its colorful houses, rich history, and Cape Malay heritage.</p>
+                    <button onclick="window.open('https://www.capetown.travel/attractions/bo-kaap/', '_blank')">Learn More</button>
+                </div>
+    
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/The_Castle_of_Good_Hope,_Cape_Town._03.jpg?raw=true" alt="Good Hope Castle" loading="lazy">
+                    <h2>Good Hope Castle</h2>
+                    <p>A historic fortress with breathtaking views and a rich legacy of exploration.</p>
+                    <button onclick="window.open('https://www.castleofgoodhope.co.za/', '_blank')">Learn More</button>
+                </div>
+    
+                <div class="card">
+                    <img src="https://github.com/Kifaa26/blog-images/blob/main/district-six-museum-..jpg?raw=true" alt="District 6 Museum" loading="lazy">
+                    <h2>District 6 Museum</h2>
+                    <p>A museum preserving the history of Cape Town's displaced communities during apartheid.</p>
+                    <button onclick="window.open('https://www.districtsix.co.za/', '_blank')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Blog. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+    $("#searchButton").click(function() {
+        performSearch();
+    });
+
+    $("#searchInput").keypress(function(event) {
+        if (event.which === 13) {  
+            performSearch();
+        }
+    });
+
+    // Function to perform the search
+    function performSearch() {
+        var searchTerm = $("#searchInput").val(); 
+        var regex = new RegExp(searchTerm, "i");  
+        $(".card").each(function() {
+            var cardText = $(this).text();  
+            if (!regex.test(cardText)) {  
+                $(this).hide();  
+            } else {
+                $(this).show();  
+            }
+        });
+    }
+});
+    </script>
+</body>
+</html>

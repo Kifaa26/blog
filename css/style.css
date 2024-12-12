@@ -1,0 +1,668 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            padding: 10px;
+            z-index: 1000; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            place-items: center; 
+        }
+
+        .card {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+            height: 25rem;
+            justify-content: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 10rem;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin: 15px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 15px;
+            line-height: 1.6;
+        }
+
+
+/* Header Parallax */
+.parallax-header {
+    background-image: url('https://raw.githubusercontent.com/Kifaa26/blog-images/refs/heads/main/197898-Cape-Town.webp'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(35, 35, 35);
+}
+
+.parallax-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.parallax-header p {
+    font-size: 1.5em;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(54, 54, 54);
+}
+
+/* About */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navbar styles */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    color: rgb(53, 53, 53);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+nav a {
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    background-color: #9b9ea2;
+    border-radius: 5px;
+}
+
+/* Header Section for the About Page */
+.header-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header-section p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+/* Main content area for About Page */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Blog-like About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    width: 60%;
+}
+
+.about-image {
+    width: 35%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 15rem;
+}
+
+/* Heading and Paragraph for the About Sections */
+.about-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff;
+    color: rgb(57, 57, 57);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+
+/* Main Content */
+main {
+    padding: 40px 10%;
+}
+
+/* Details Section */
+.details-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.details-section h2 {
+    font-size: 3em;
+    color: #2e2e2e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.details-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4e4e4e;
+}
+
+.details-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Content container to place image next to text */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.content-container img {
+    width: 40%;
+    border-radius: 12px;
+}
+
+/* Remove hover effect */
+.details-section:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.details-section ul {
+    font-size: 1.2em;
+    color: #555;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.details-section ul li {
+    margin-bottom: 15px;
+    padding-left: 1em;
+    position: relative;
+}
+
+.details-section ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #49b59f;
+    font-weight: bold;
+}
+
+details-section {
+    margin: 30px 0;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 2;
+    max-width: 600px;
+}
+
+.text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.banner {
+    background-color: #707980; 
+    color: white;
+    text-align: center;
+    padding: 50px 20px; 
+    margin-bottom: 30px; 
+    border-radius: 10px 10px 10px 10px;
+}
+
+.banner h1 {
+    font-size: 3rem; 
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto; 
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.button {
+margin-top: 20px; 
+}
+
+.button-button {
+background-color: #707980; 
+color: white; 
+border: none; 
+padding: 12px 25px; 
+font-size: 1rem; 
+cursor: pointer; 
+border-radius: 5px; 
+transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.button-button:hover {
+background-color: #94a2ad; 
+transform: translateY(-2px); 
+}
+
+.button-button:focus {
+outline: none; 
+}
+
+.button-button:active {
+background-color: #707980; 
+}
+
+.details-section {
+    margin: 20px 0; 
+    padding: 20px;
+}
+
+.content-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.text-container {
+    flex: 1; 
+    font-size: 1rem; 
+}
+
+.image-container {
+    flex: 1;
+    text-align: right; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+button {
+    background-color: #707980;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #707980;
+} 
+
+.main-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.newsletter-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.newsletter ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.newsletter ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    padding: 12px 30px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #d65f4d;
+}
+
+.newsletter-image {
+    flex: 1;
+    text-align: center;
+}
+
+.newsletter-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Confirmation Message Styles */
+.confirmation-message {
+    display: none;
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f8ff;
+    border: 2px solid #888;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newsletter h2 {
+        font-size: 2em;
+    }
+
+    .newsletter p {
+        font-size: 1em;
+    }
+
+    .newsletter button {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+
+    .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .newsletter-image {
+        padding: 0;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Styling for the search bar and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#searchInput {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 200px;
+}
+
+#searchButton {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#searchButton i {
+    font-size: 18px;
+    color: #333;
+}
+
